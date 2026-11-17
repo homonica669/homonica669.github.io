@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>91漫画 - 漫画迷的每日必看，日韩佳作持续上新</title>
+<meta name="description" content="91漫画是漫画迷每日必看的专业日韩漫画平台。我们提供持续上新的日韩佳作、深度行业解析、权威购买指南与漫画文化解读。涵盖少年、少女、青年、悬疑等全品类，结合社区评价与专家推荐，打造高可信度的漫画内容生态。">
+<meta name="keywords" content="91漫画,九一,日韩漫画,漫画推荐,漫画行业,漫画平台,">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="91漫画 - 漫画迷的每日必看，日韩佳作持续上新">
+<meta property="og:description" content="专业日韩漫画推荐与行业解析平台，涵盖少年、少女、青年、悬疑全品类，每日更新榜单、购买指南与漫画文化解读。">
+<meta property="og:locale" content="zh_CN">
+<style>
+:root{
+  --bg:#0e1016;
+  --bg-soft:#141822;
+  --panel:#181d29;
+  --panel-2:#1e2432;
+  --line:#28303f;
+  --text:#e8ebf2;
+  --text-2:#a7b0c0;
+  --text-3:#78828f;
+  --accent:#ff5f7e;
+  --accent-2:#4d8dff;
+  --accent-3:#39d3a3;
+  --gold:#f5c451;
+  --radius:14px;
+  --shadow:0 12px 32px rgba(0,0,0,.35);
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:16px;
+  line-height:1.75;
+  letter-spacing:.01em;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px}
+.section{padding:76px 0;border-top:1px solid var(--line)}
+.section:first-of-type{border-top:0}
+.eyebrow{
+  display:inline-block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);font-weight:700;margin-bottom:14px;
+}
+.section-title{
+  font-size:clamp(22px,3.2vw,32px);line-height:1.35;font-weight:800;letter-spacing:.01em;
+}
+.section-desc{color:var(--text-2);margin-top:12px;max-width:760px;font-size:15.5px}
+.section-head{margin-bottom:38px}
+
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(14,16,22,.86);
+  backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  height:66px;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.02em}
+.logo-mark{
+  width:32px;height:32px;border-radius:9px;flex:none;
+  background:linear-gradient(135deg,var(--accent),#a13bff);
+  display:grid;place-items:center;font-size:14px;color:#fff;font-weight:800;
+}
+.logo small{display:block;font-size:11px;color:var(--text-3);font-weight:500;letter-spacing:.14em}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{font-size:14.5px;color:var(--text-2);transition:color .18s}
+.nav a:hover,.nav a:focus-visible{color:#fff}
+.header-cta{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:9px 18px;border-radius:999px;font-size:14px;font-weight:600;
+  background:linear-gradient(135deg,var(--accent),#ff8a5f);color:#fff;
+  box-shadow:0 6px 18px rgba(255,95,126,.28);
+  transition:transform .18s ease;
+}
+.header-cta:hover{transform:translateY(-1px)}
+
+.hero{
+  position:relative;overflow:hidden;
+  padding:88px 0 72px;
+  background:
+    radial-gradient(900px 420px at 12% -8%,rgba(255,95,126,.20),transparent 62%),
+    radial-gradient(760px 420px at 88% 6%,rgba(77,141,255,.20),transparent 62%),
+    linear-gradient(180deg,#11141c,#0e1016);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:radial-gradient(circle at 50% 30%,#000,transparent 78%);
+}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:6px 14px;border-radius:999px;font-size:12.5px;
+  background:rgba(255,95,126,.12);border:1px solid rgba(255,95,126,.34);
+  color:#ffb4c2;margin-bottom:22px;font-weight:600;
+}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--accent-3);box-shadow:0 0 0 3px rgba(57,211,163,.18)}
+.hero h1{
+  font-size:clamp(30px,4.6vw,48px);line-height:1.22;font-weight:900;letter-spacing:-.01em;
+}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(120deg,#ff7a94,#ffb27a 42%,#4d8dff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero-lead{
+  margin-top:20px;color:var(--text-2);font-size:16.5px;max-width:580px;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:13px 26px;border-radius:999px;font-size:15px;font-weight:700;
+  border:1px solid transparent;transition:all .18s ease;
+}
+.btn-primary{background:linear-gradient(135deg,var(--accent),#ff7f5c);color:#fff;box-shadow:0 10px 26px rgba(255,95,126,.3)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(255,95,126,.38)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:#3c4759;background:rgba(255,255,255,.06)}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:44px;max-width:560px}
+.stat{
+  background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:12px;padding:16px 14px;
+}
+.stat b{display:block;font-size:22px;font-weight:800;letter-spacing:.01em}
+.stat span{font-size:12.5px;color:var(--text-3)}
+
+.hero-art{
+  position:relative;border-radius:20px;padding:22px;
+  background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+  border:1px solid var(--line);box-shadow:var(--shadow);
+}
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.art-cell{
+  aspect-ratio:3/4;border-radius:10px;position:relative;overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+  display:flex;align-items:flex-end;padding:10px;
+  font-size:11.5px;font-weight:700;line-height:1.35;color:rgba(255,255,255,.92);
+  text-shadow:0 1px 6px rgba(0,0,0,.6);
+}
+.art-cell::before{
+  content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.055) 0 8px,transparent 8px 16px);
+}
+.art-cell span{position:relative;z-index:1}
+.c1{background:linear-gradient(150deg,#ff5f7e,#7b2ff7)}
+.c2{background:linear-gradient(150deg,#4d8dff,#20325c)}
+.c3{background:linear-gradient(150deg,#39d3a3,#0f4d3c)}
+.c4{background:linear-gradient(150deg,#f5c451,#8a4b12)}
+.c5{background:linear-gradient(150deg,#a35bff,#3a1b63)}
+.c6{background:linear-gradient(150deg,#20b8cd,#123a52)}
+.hero-art-note{
+  margin-top:16px;font-size:12.5px;color:var(--text-3);line-height:1.6;
+  border-top:1px dashed var(--line);padding-top:14px;
+}
+
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat-card{
+  background:linear-gradient(180deg,var(--panel),var(--bg-soft));
+  border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;
+  transition:transform .2s ease,border-color .2s ease;
+}
+.cat-card:hover{transform:translateY(-4px);border-color:#3a4557}
+.cat-icon{
+  width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+  font-size:19px;margin-bottom:16px;font-weight:800;
+}
+.i1{background:rgba(255,95,126,.14);color:#ff8ba0}
+.i2{background:rgba(255,150,210,.14);color:#ffa8d4}
+.i3{background:rgba(77,141,255,.14);color:#8ab2ff}
+.i4{background:rgba(163,91,255,.14);color:#bfa0ff}
+.i5{background:rgba(57,211,163,.14);color:#7de7c4}
+.i6{background:rgba(245,196,81,.14);color:#f8d98a}
+.i7{background:rgba(32,184,205,.14);color:#7fdfee}
+.i8{background:rgba(255,127,92,.14);color:#ffb099}
+.cat-card h3{font-size:17px;font-weight:700;margin-bottom:9px}
+.cat-card p{font-size:13.8px;color:var(--text-2);line-height:1.7}
+.cat-meta{margin-top:14px;font-size:12.5px;color:var(--text-3);display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:12px}
+
+.rank-list{display:grid;grid-template-columns:1.05fr .95fr;gap:20px}
+.rank-col{display:flex;flex-direction:column;gap:14px}
+.rank-item{
+  display:grid;grid-template-columns:44px 1fr auto;gap:16px;align-items:center;
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;
+  transition:border-color .18s ease,background .18s ease;
+}
+.rank-item:hover{border-color:#3b4558;background:var(--panel-2)}
+.rank-no{
+  font-size:16px;font-weight:900;color:var(--text-3);text-align:center;
+  font-variant-numeric:tabular-nums;
+}
+.rank-item:nth-child(1) .rank-no,.rank-item:nth-child(2) .rank-no,.rank-item:nth-child(3) .rank-no{color:var(--gold)}
+.rank-body h3{font-size:15.5px;font-weight:700;margin-bottom:5px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.badge{
+  font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;
+  background:rgba(77,141,255,.14);color:#9dbcff;border:1px solid rgba(77,141,255,.26);
+}
+.badge.hot{background:rgba(255,95,126,.14);color:#ff9db0;border-color:rgba(255,95,126,.28)}
+.badge.new{background:rgba(57,211,163,.13);color:#7de7c4;border-color:rgba(57,211,163,.26)}
+.rank-body p{font-size:13.2px;color:var(--text-2);line-height:1.65}
+.score{text-align:right;font-size:19px;font-weight:900;color:var(--gold);font-variant-numeric:tabular-nums}
+.score small{display:block;font-size:11px;color:var(--text-3);font-weight:500;letter-spacing:.08em}
+
+.analysis-block{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.analysis-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px;
+}
+.analysis-card h3{font-size:18px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.analysis-card h3::before{content:"";width:4px;height:18px;border-radius:2px;background:linear-gradient(180deg,var(--accent),var(--accent-2))}
+.analysis-card p{font-size:14.3px;color:var(--text-2);line-height:1.85;margin-bottom:12px}
+.analysis-card p:last-child{margin-bottom:0}
+.data-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.data-cell{
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center;
+}
+.data-cell b{display:block;font-size:23px;font-weight:900;color:var(--accent-3);font-variant-numeric:tabular-nums}
+.data-cell span{font-size:12.5px;color:var(--text-3);line-height:1.5;display:block;margin-top:4px}
+
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.guide-card{
+  background:linear-gradient(180deg,var(--panel-2),var(--panel));
+  border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;position:relative;
+}
+.guide-step{
+  position:absolute;top:20px;right:22px;font-size:34px;font-weight:900;
+  color:rgba(255,255,255,.05);line-height:1;
+}
+.guide-card h3{font-size:16.5px;font-weight:700;margin-bottom:12px}
+.guide-card ul{display:flex;flex-direction:column;gap:9px}
+.guide-card li{font-size:13.6px;color:var(--text-2);line-height:1.7;padding-left:16px;position:relative}
+.guide-card li::before{
+  content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;
+  background:var(--accent-2);
+}
+.tip-box{
+  margin-top:26px;padding:20px 24px;border-radius:12px;
+  background:rgba(77,141,255,.07);border:1px solid rgba(77,141,255,.22);
+  font-size:14px;color:#b9c9e6;line-height:1.8;
+}
+.tip-box strong{color:#dbe6ff}
+
+.culture-wrap{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.culture-text p{font-size:14.6px;color:var(--text-2);line-height:1.92;margin-bottom:16px}
+.culture-text h3{font-size:17.5px;font-weight:700;margin:22px 0 10px}
+.culture-quote{
+  border-left:3px solid var(--accent);padding:6px 0 6px 20px;margin:24px 0;
+  color:var(--text);font-size:15.5px;line-height:1.85;font-weight:500;
+}
+.culture-side{display:flex;flex-direction:column;gap:16px}
+.side-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;
+}
+.side-card h4{font-size:15px;font-weight:700;margin-bottom:10px;color:#dfe5f0}
+.side-card p{font-size:13.5px;color:var(--text-2);line-height:1.8}
+
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px;
+  display:flex;flex-direction:column;justify-content:space-between;gap:16px;
+}
+.review-text{font-size:14px;color:var(--text-2);line-height:1.8}
+.review-user{display:flex;align-items:center;gap:11px;border-top:1px solid var(--line);padding-top:14px}
+.avatar{
+  width:36px;height:36px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:13px;font-weight:800;color:#fff;
+}
+.a1{background:linear-gradient(135deg,#ff5f7e,#a13bff)}
+.a2{background:linear-gradient(135deg,#4d8dff,#20b8cd)}
+.a3{background:linear-gradient(135deg,#39d3a3,#0f7a58)}
+.a4{background:linear-gradient(135deg,#f5c451,#b06a12)}
+.a5{background:linear-gradient(135deg,#a35bff,#4a1e8f)}
+.a6{background:linear-gradient(135deg,#ff7f5c,#a8321a)}
+.review-user b{display:block;font-size:13.5px;font-weight:700}
+.review-user span{font-size:11.8px;color:var(--text-3)}
+.expert-strip{
+  margin-top:26px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+}
+.expert-card{
+  background:linear-gradient(135deg,rgba(255,95,126,.08),rgba(77,141,255,.08));
+  border:1px solid rgba(255,255,255,.09);border-radius:var(--radius);padding:24px;
+}
+.expert-card p{font-size:14.2px;line-height:1.88;color:#d5dbe8;font-style:normal}
+.expert-card cite{
+  display:block;margin-top:14px;font-style:normal;font-size:12.8px;color:var(--text-3);
+}
+.expert-card cite b{color:#cfd7e5;font-weight:700}
+
+.faq-list{display:flex;flex-direction:column;gap:12px;max-width:920px}
+details{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:0;overflow:hidden;transition:border-color .18s ease;
+}
+details[open]{border-color:#3a4557}
+summary{
+  cursor:pointer;list-style:none;padding:18px 22px;
+  font-size:15px;font-weight:650;display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:"+";font-size:19px;font-weight:400;color:var(--text-3);flex:none;
+  transition:transform .2s ease,color .2s ease;
+}
+details[open] summary::after{content:"−";color:var(--accent)}
+details p{padding:0 22px 20px;font-size:14px;color:var(--text-2);line-height:1.85}
+
+.site-footer{border-top:1px solid var(--line);background:#0b0d12;padding:56px 0 30px}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px}
+.footer-brand p{font-size:13.5px;color:var(--text-3);line-height:1.85;margin-top:14px;max-width:320px}
+.footer-col h4{font-size:13.5px;font-weight:700;margin-bottom:14px;color:#d9e0ec;letter-spacing:.04em}
+.footer-col ul{display:flex;flex-direction:column;gap:9px}
+.footer-col a{font-size:13.3px;color:var(--text-3);transition:color .16s}
+.footer-col a:hover{color:var(--text)}
+.footer-bottom{
+  margin-top:42px;padding-top:22px;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
+  font-size:12.5px;color:var(--text-3);line-height:1.7;
+}
+
+@media (max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:40px}
+  .hero-art{max-width:460px}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .rank-list{grid-template-columns:1fr}
+  .analysis-block{grid-template-columns:1fr}
+  .guide-grid{grid-template-columns:1fr}
+  .culture-wrap{grid-template-columns:1fr;gap:26px}
+  .review-grid{grid-template-columns:1fr 1fr}
+  .expert-strip{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr 1fr;gap:28px}
+  .data-row{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:720px){
+  .nav{display:none}
+  .section{padding:54px 0}
+  .hero{padding:58px 0 48px}
+  .hero-stats{grid-template-columns:1fr;max-width:100%}
+  .cat-grid{grid-template-columns:1fr}
+  .review-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+  .rank-item{grid-template-columns:34px 1fr;row-gap:8px}
+  .score{grid-column:2;text-align:left;font-size:16px}
+  .header-cta{padding:8px 14px;font-size:13px}
+  .hero-art{padding:16px}
+  .art-grid{gap:8px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark">91</span>
+      <span>91漫画<small>日韩佳作 · 每日上新</small></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#categories">分类矩阵</a>
+      <a href="#ranking">精选榜单</a>
+      <a href="#insight">行业解析</a>
+      <a href="#buying">购买指南</a>
+      <a href="#culture">漫画文化</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="header-cta" href="#ranking">查看今日榜单</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="hero-tag"><span class="dot"></span>编辑部每日 09:00 更新 · 今日新增 36 部</span>
+        <h1>91漫画：漫画迷的<em>每日必看</em>，日韩佳作持续上新</h1>
+        <p class="hero-lead">
+          从少年热血到青年悬疑，从少女情感到日常治愈，91漫画以编辑初审、社区众评、专家复核三层筛选机制，
+          为读者梳理每一条值得投入时间与预算的日韩漫画线索。我们不做无差别堆量，只做有依据的推荐。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#ranking">进入精选佳作榜单</a>
+          <a class="btn btn-ghost" href="#buying">阅读购买指南</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>18,600+</b><span>收录作品条目</span></div>
+          <div class="stat"><b>1,240+</b><span>月度更新章节追踪</span></div>
+          <div class="stat"><b>96.4%</b><span>榜单读者满意度</span></div>
+        </div>
+      </div>
+      <aside class="hero-art" aria-label="本周推荐视觉示意">
+        <div class="art-grid">
+          <div class="art-cell c1"><span>少年<br>热血</span></div>
+          <div class="art-cell c2"><span>青年<br>悬疑</span></div>
+          <div class="art-cell c3"><span>少女<br>情感</span></div>
+          <div class="art-cell c4"><span>历史<br>时代</span></div>
+          <div class="art-cell c5"><span>奇幻<br>设定</span></div>
+          <div class="art-cell c6"><span>日常<br>治愈</span></div>
+        </div>
+        <p class="hero-art-note">
+          本周六大分类共 36 部作品进入候选池，经 12 位资深读者盲评后，8 部进入精选榜单。
+          评分维度包含叙事完成度、作画稳定度、更新节奏与题材新鲜度。
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="categories">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Category Matrix</span>
+        <h2 class="section-title">全品类分类矩阵：从少年到悬疑，覆盖每一种阅读偏好</h2>
+        <p class="section-desc">
+          日韩漫画的题材谱系远比多数读者想象中宽阔。分类矩阵不是简单的标签堆叠，而是帮助你在三分钟内锁定"今天想读什么"的检索地图。
+          每个分类下都标注了核心叙事特征、适配读者群与近期更新密度。
+        </p>
+      </div>
+
+      <div class="cat-grid">
+        <article class="cat-card">
+          <div class="cat-icon i1">少</div>
+          <h3>少年漫画</h3>
+          <p>以成长与对抗为核心，强调目标达成、伙伴羁绊与阶段性突破。战斗分镜与节奏控制是判断质量的关键指标。</p>
+          <div class="cat-meta"><span>周更为主</span><span>1,860 部</span></div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon i2">少</div>
+          <h3>少女漫画</h3>
+          <p>聚焦情感张力与人物内心，画面表现力要求高。近年明显向职场、成长与自我认同题材延伸，不再是单一恋爱线。</p>
+          <div class="cat-meta"><span>半月更为主</span><span>1,120 部</span></div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon i3">青</div>
+          <h3>青年漫画</h3>
+          <p>题材尺度与叙事复杂度最高，常见社会议题、职业写实与道德困境。适合追求文本厚度的成熟读者。</p>
+          <div class="cat-meta"><span>月更居多</span><span>2,340 部</span></div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon i4">悬</div>
+          <h3>悬疑推理</h3>
+          <p>以信息不对称制造阅读驱动，重视伏笔回收与逻辑闭环。判断标准是"能否在结局仍然自洽"。</p>
+          <div class="cat-meta"><span>不定期</span><span>980 部</span></div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon i5">日</div>
+          <h3>日常治愈</h3>
+          <p>弱冲突、强氛围，以生活细节与情绪留白取胜。适合碎片化阅读，单话可独立成篇。</p>
+          <div class="cat-meta"><span>周更为主</span><span>1,460 部</span></div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon i6">历</div>
+          <h3>历史时代</h3>
+          <p>涉及真实历史背景与服饰考据，考据严谨度直接决定可信度。优秀作品往往附带参考资料说明。</p>
+          <div class="cat-meta"><span>月更居多</span><span>620 部</span></div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon i7">奇</div>
+          <h3>奇幻设定</h3>
+          <p>核心在于世界观规则的自洽。魔法体系、种族设定与权力结构需要可推演，而非随意扩展。</p>
+          <div class="cat-meta"><span>周更为主</span><span>1,720 部</span></div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon i8">职</div>
+          <h3>职场现实</h3>
+          <p>以行业细节为骨架，医疗、料理、法律、体育等专业线均有代表性作品，对作者调研能力要求极高。</p>
+          <div class="cat-meta"><span>半月更为主</span><span>760 部</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ranking">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Editor's Picks</span>
+        <h2 class="section-title">精选佳作榜单：本期编辑部与社区共同选出的十部作品</h2>
+        <p class="section-desc">
+          榜单评分由三部分加权构成：叙事与结构 40%、作画与分镜 30%、更新稳定性与阅读体验 30%。
+          满分 10 分，评分仅代表本期综合表现，不构成任何形式的排名承诺。
+        </p>
+      </div>
+
+      <div class="rank-list">
+        <div class="rank-col">
+          <article class="rank-item">
+            <div class="rank-no">01</div>
+            <div class="rank-body">
+              <h3>《无声的剑域》<span class="badge hot">本期首选</span></h3>
+              <p>少年向剑戟题材，以"无台词战斗"著称。第 42 话起进入最终章，分镜留白处理被视为近年教科书级案例。</p>
+            </div>
+            <div class="score">9.4<small>综合评分</small></div>
+          </article>
+          <article class="rank-item">
+            <div class="rank-no">02</div>
+            <div class="rank-body">
+              <h3>《十七层公寓》<span class="badge">悬疑推理</span></h3>
+              <p>密闭空间群像推理，十三条线索在第九话完成第一次收束。适合喜欢逐格回看的读者。</p>
+            </div>
+            <div class="score">9.2<small>综合评分</small></div>
+          </article>
+          <article class="rank-item">
+            <div class="rank-no">03</div>
+            <div class="rank-body">
+              <h3>《春日便当店》<span class="badge new">新晋上榜</span></h3>
+              <p>日常治愈向代表作，每话一道料理搭配一段客人故事，情绪落点克制，适合睡前阅读。</p>
+            </div>
+            <div class="score">9.0<small>综合评分</small></div>
+          </article>
+          <article class="rank-item">
+            <div class="rank-no">04</div>
+            <div class="rank-body">
+              <h3>《海雾纪年》<span class="badge">历史时代</span></h3>
+              <p>以港口贸易为背景的时代群像，附有作者手绘的船舶结构考据页，资料完整度少见。</p>
+            </div>
+            <div class="score">8.8<small>综合评分</small></div>
+          </article>
+          <article class="rank-item">
+            <div class="rank-no">05</div>
+            <div class="rank-body">
+              <h3>《交换日记》<span class="badge">少女情感</span></h3>
+              <p>双视角叙事，两位主角各自的心理线独立成立，最终在第十卷交汇，结构安排颇为精巧。</p>
+            </div>
+            <div class="score">8.7<small>综合评分</small></div>
+          </article>
+        </div>
+
+        <div class="rank-col">
+          <article class="rank-item">
+            <div class="rank-no">06</div>
+            <div class="rank-body">
+              <h3>《第七号规则》<span class="badge">青年漫画</span></h3>
+              <p>职场与法理交叉题材，六起案件围绕同一条规则展开，讨论的是制度与个体的边界。</p>
+            </div>
+            <div class="score">8.6<small>综合评分</small></div>
+          </article>
+          <article class="rank-item">
+            <div class="rank-no">07</div>
+            <div class="rank-body">
+              <h3>《雾中灯塔》<span class="badge">奇幻设定</span></h3>
+              <p>世界观规则清晰可推演，魔法代价设定贯穿全篇，未出现后期设定崩坏问题。</p>
+            </div>
+            <div class="score">8.5<small>综合评分</small></div>
+          </article>
+          <article class="rank-item">
+            <div class="rank-no">08</div>
+            <div class="rank-body">
+              <h3>《食物的温度》<span class="badge">职场现实</span></h3>
+              <p>料理行业写实向，从备料、火候到店铺经营均有细节支撑，读完能形成可用的行业认知。</p>
+            </div>
+            <div class="score">8.4<small>综合评分</small></div>
+          </article>
+          <article class="rank-item">
+            <div class="rank-no">09</div>
+            <div class="rank-body">
+              <h3>《午后的第三格》<span class="badge new">新晋上榜</span></h3>
+              <p>四格形式但叙事连续，节奏轻快，适合通勤阅读。作者更新稳定性在本期候选中排名第一。</p>
+            </div>
+            <div class="score">8.2<small>综合评分</small></div>
+          </article>
+          <article class="rank-item">
+            <div class="rank-no">10</div>
+            <div class="rank-body">
+              <h3>《旧城回声》<span class="badge">悬疑推理</span></h3>
+              <p>双时间线叙事，跨越三十年的两桩旧案互为镜像，结局收束完整，无强行留白。</p>
+            </div>
+            <div class="score">8.1<small>综合评分</small></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="insight">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Industry Insight</span>
+        <h2 class="section-title">行业解析：日韩漫画正在发生的四个结构性变化</h2>
+        <p class="section-desc">
+          阅读偏好从来不是凭空形成的，它由发行结构、连载机制、平台分成方式与读者付费习惯共同塑造。
+          以下四个变化，正在实质性影响你今年能在书架与屏幕上看到什么。
+        </p>
+      </div>
+
+      <div class="analysis-block">
+        <article class="analysis-card">
+          <h3>垂直条漫与页漫的边界正在消失</h3>
+          <p>
+            传统页漫依赖跨页与翻页节奏制造冲击，而竖屏条漫强调连续下滑中的节奏控制。
+            近两年出现明显的融合趋势：部分纸质连载作品开始为电子版重新切分画面，
+            而头部条漫则在关键剧情点插入"横向展开页"以强化视觉停顿。
+          </p>
+          <p>
+            对读者的直接影响是，同一部作品在不同平台上可能呈现出完全不同的阅读感受。
+            选择阅读载体时，画面切分方式比分辨率更值得关注。
+          </p>
+        </article>
+        <article class="analysis-card">
+          <h3>短篇与中篇连载比重上升</h3>
+          <p>
+            长篇连载的商业风险在上升，出版社与平台更倾向扶持 3 至 8 卷规模的中篇作品。
+            这类作品的优点是结构紧凑、结局可控，缺点是世界观展开空间有限。
+          </p>
+          <p>
+            对读者而言这是利好：试错成本显著下降。建议在追新作时优先关注已明确标注"预计卷数"的作品，
+            避免踩入长期停更的坑。
+          </p>
+        </article>
+        <article class="analysis-card">
+          <h3>题材本土化与跨地域改编加速</h3>
+          <p>
+            日韩作品在海外市场的改编已从单纯翻译转向本地化重制，包括分镜顺序调整、
+            文化背景注释补充，甚至部分情节重写。这类版本质量差异极大，需要读者主动甄别。
+          </p>
+          <p>
+            判断方法很简单：查看版权页是否标注原版连载信息与译者署名。缺少这两项信息的版本，
+            通常意味着制作流程不完整。
+          </p>
+        </article>
+        <article class="analysis-card">
+          <h3>读者评价体系从"打分"转向"维度化"</h3>
+          <p>
+            单一总分已经很难反映作品真实质量。越来越多社区开始拆分评价维度：
+            作画、剧情、人物、更新稳定性、翻译质量分别独立计分。
+          </p>
+          <p>
+            这套体系对读者的价值在于可组合筛选。例如只看重"剧情 + 更新稳定"两项时，
+            你能迅速排除大量开局惊艳但后续乏力的作品。
+          </p>
+        </article>
+      </div>
+
+      <div class="data-row">
+        <div class="data-cell"><b>63%</b><span>读者优先关注<br>更新稳定性</span></div>
+        <div class="data-cell"><b>2.7 卷</b><span>新作平均<br>确认连载卷数</span></div>
+        <div class="data-cell"><b>48%</b><span>中篇作品<br>占比（近两年）</span></div>
+        <div class="data-cell"><b>5 维</b><span>主流社区<br>评价维度数量</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="buying">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Buying Guide</span>
+        <h2 class="section-title">购买指南：把钱花在真正值得收藏的版本上</h2>
+        <p class="section-desc">
+          同一部作品可能同时存在电子版、单行本、完全版、爱藏版与多语种授权版。
+          价格差距可达数倍，差异并不只体现在印刷质量上，更体现在收录内容、装帧工艺与附加资料。
+        </p>
+      </div>
+
+      <div class="guide-grid">
+        <article class="guide-card">
+          <span class="guide-step">01</span>
+          <h3>先定版本，再谈价格</h3>
+          <ul>
+            <li>单行本：常规连载合集，价格最低，收录内容为基础话数。</li>
+            <li>完全版：通常重制封面与彩页，附加作者后记，适合长期收藏。</li>
+            <li>爱藏版：大开本、纸质升级，多为限定发行，溢价明显。</li>
+            <li>电子版：便于检索与随身阅读，但彩页还原度需实测确认。</li>
+          </ul>
+        </article>
+        <article class="guide-card">
+          <span class="guide-step">02</span>
+          <h3>验证渠道是否正规</h3>
+          <ul>
+            <li>查看版权页：应有原出版社授权信息与 ISBN 编号。</li>
+            <li>核对译者署名：正规授权版必然标注译者与校对。</li>
+            <li>检查印刷细节：网点是否清晰、跨页是否对齐、油墨有无透背。</li>
+            <li>警惕异常低价：低于市场均价三成以上通常存在风险。</li>
+          </ul>
+        </article>
+        <article class="guide-card">
+          <span class="guide-step">03</span>
+          <h3>按阅读习惯分配预算</h3>
+          <ul>
+            <li>试读优先：先通过合法试读渠道判断画风与叙事是否合口味。</li>
+            <li>收藏优先：只对已读且确认会重读的作品购买纸质版。</li>
+            <li>成套购买：同一作品尽量一次补齐，避免后续断货溢价。</li>
+            <li>预算分层：将年度预算按七成常规、三成尝鲜分配。</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="tip-box">
+        <strong>关于"绝版"的常识：</strong>
+        绝版不等于必然升值。印量、作品知名度、装帧完好度与是否有后续再版计划共同决定流通价值。
+        购买绝版书时，建议优先确认书脊是否开裂、书页有无黄斑、护封是否原件，这三点比"首刷"标记更影响实际收藏体验。
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="culture">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Manga Culture</span>
+        <h2 class="section-title">漫画文化解读：分镜语言如何决定你的阅读感受</h2>
+        <p class="section-desc">
+          很多人以为"看得懂漫画"是不需要学习的，但分镜是一套有规则的视觉语法。
+          理解它，你就能解释为什么有些作品让人一口气读完，有些却总是读不进去。
+        </p>
+      </div>
+
+      <div class="culture-wrap">
+        <div class="culture-text">
+          <p>
+            分镜的基本单位是"格"，而真正承载叙事的其实是格与格之间的空隙。读者会在两个画面之间自动补全动作与时间，
+            这个过程被称为视觉闭合。优秀的分镜作者会精确控制这个空隙的大小：
+            空隙越大，留给读者的想象与时间感越强；空隙越小，节奏越紧张。
+          </p>
+          <h3>阅读方向与视觉动线</h3>
+          <p>
+            日式漫画传统上从右向左阅读，韩式条漫则以上下滑动为主。这决定了两种完全不同的构图逻辑。
+            日式分镜强调"眼睛在页面上的移动路径"，常通过人物视线、对白气泡位置与背景线条引导读者视线；
+            条漫则更依赖纵向节奏与留白间隔，通过分段下滑制造停顿。
+          </p>
+          <h3>对白气泡的位置就是节奏标记</h3>
+          <p>
+            气泡并非随意放置。气泡越靠上，代表说话时间越早；气泡之间的间距代表对话的停顿长度。
+            当作者刻意把气泡放到格子边缘或压在画面上时，通常意味着说话者情绪失控、声音被环境淹没，或对话被打断。
+          </p>
+          <div class="culture-quote">
+            判断一部作品是否"耐读"，最直接的方法不是看画工多精细，而是看它的分镜能否让你忘记翻页这个动作本身。
+          </div>
+          <p>
+            这也是为什么同一部作品在纸质版与电子版上体验不同：屏幕尺寸改变了单屏可容纳的格子数量，
+            从而改变了视线移动的距离，节奏感也随之变化。若条件允许，重要作品建议至少体验一次纸质阅读。
+          </p>
+        </div>
+
+        <div class="culture-side">
+          <div class="side-card">
+            <h4>彩页与黑白页的功能差异</h4>
+            <p>彩页通常用于章节开篇或关键转折，作用是建立时间与氛围；黑白页则依靠网点与留白承担绝大多数叙事。彩页过多反而会稀释其强调作用。</p>
+          </div>
+          <div class="side-card">
+            <h4>网点纸到数字网点的演变</h4>
+            <p>传统网点纸的纹理带有轻微不规则感，数字网点则绝对规整。这一差别在高倍放大或印刷质量不佳时尤为明显，也是辨别制作年代的方法之一。</p>
+          </div>
+          <div class="side-card">
+            <h4>拟声词的本地化处理</h4>
+            <p>拟声词同时承担声音与画面质感。本地化版本若直接替换为文字而忽略字体设计与位置，会破坏原有构图平衡，这是判断译制质量的重要细节。</p>
+          </div>
+          <div class="side-card">
+            <h4>跨页构图的收藏价值</h4>
+            <p>跨页是页漫独有的表现手段。装订方式若不佳，跨页会被书脊吞掉一部分画面。完全版与爱藏版通常在此处做了专门处理。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Community &amp; Experts</span>
+        <h2 class="section-title">社区评价与专家推荐：来自真实读者的选择依据</h2>
+        <p class="section-desc">
+          我们定期汇总社区中带具体依据的长评，并邀请从事编辑、翻译与书店采购的从业者提供独立意见。
+          以下评价均围绕"为什么推荐"展开，而非单纯表达喜好。
+        </p>
+      </div>
+
+      <div class="review-grid">
+        <article class="review-card">
+          <p class="review-text">追了两年，最让我服气的是它的更新节奏。作者即使在合刊期也从不断更，章节长度稳定在 19 到 21 页，阅读预期非常明确。</p>
+          <div class="review-user">
+            <span class="avatar a1">林</span>
+            <div><b>林间书店</b><span>社区长评作者 · 关注少年向</span></div>
+          </div>
+        </article>
+        <article class="review-card">
+          <p class="review-text">悬疑线埋得很干净。第九话那个看似随手画的窗台盆栽，在第二十七话成为关键物证。这种伏笔密度值得回看第二遍。</p>
+          <div class="review-user">
+            <span class="avatar a2">周</span>
+            <div><b>周叙白</b><span>推理社群管理员</span></div>
+          </div>
+        </article>
+        <article class="review-card">
+          <p class="review-text">作为睡前读物非常合适。每话独立成篇但有情绪连续性，不会因为隔几天没看就接不上，这点对上班族很友好。</p>
+          <div class="review-user">
+            <span class="avatar a3">陈</span>
+            <div><b>陈屿</b><span>普通读者 · 阅读 6 年</span></div>
+          </div>
+        </article>
+        <article class="review-card">
+          <p class="review-text">考据部分是加分项。作者在卷末附了参考书目和手绘结构图，能看出确实下了功夫，而不是随手画个古风背景。</p>
+          <div class="review-user">
+            <span class="avatar a4">吴</span>
+            <div><b>吴知远</b><span>历史题材读者</span></div>
+          </div>
+        </article>
+        <article class="review-card">
+          <p class="review-text">完全版和单行本的差距比预想中大。彩页还原度高很多，跨页也没有被书脊吃掉，如果真心喜欢，直接上完全版更省事。</p>
+          <div class="review-user">
+            <span class="avatar a5">许</span>
+            <div><b>许南</b><span>实体收藏者 · 藏书 400+</span></div>
+          </div>
+        </article>
+        <article class="review-card">
+          <p class="review-text">条漫改成竖屏后节奏确实更顺，但有几处原本的横向大格被切开了，稍微可惜。建议两个版本都看一遍再决定买哪个。</p>
+          <div class="review-user">
+            <span class="avatar a6">郑</span>
+            <div><b>郑一禾</b><span>跨平台阅读者</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="expert-strip">
+        <article class="expert-card">
+          <p>"筛选作品时我最先看的是更新稳定性，而不是开局有多惊艳。连载是一场长跑，能稳定交付的作者，往往在中后段才真正爆发。读者不妨把'是否按时更新'当作第一条筛选条件。"</p>
+          <cite><b>顾斯言</b> · 漫画编辑，从业十一年</cite>
+        </article>
+        <article class="expert-card">
+          <p>"译制质量的分水岭往往在细节：称呼是否统一、拟声词是否保留原位置、注释是否放在当页而非卷末。这三项做好的版本，阅读流畅度会有明显提升，值得为它多花一点预算。"</p>
+          <cite><b>苏宁川</b> · 日韩作品译者，参与译制四十余部</cite>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section-title">常见问题</h2>
+        <p class="section-desc">关于选书、追更、版本与阅读顺序，读者最常提出的疑问集中在这里。</p>
+      </div>
+
+      <div class="faq-list">
+        <details open>
+          <summary>第一次接触日韩漫画，应该从哪一类开始？</summary>
+          <p>建议从日常治愈或少年向的短篇、中篇作品入手。这两类作品结构清晰、阅读门槛低，能在较短时间内建立对分镜语言的熟悉感。等适应了阅读节奏，再尝试青年向或悬疑推理这类信息密度更高的题材，体验会更好。</p>
+        </details>
+        <details>
+          <summary>榜单评分是怎么算出来的，能完全信任吗？</summary>
+          <p>评分由叙事结构、作画分镜、更新稳定性三项加权得出，权重分别为 40%、30%、30%，并参考社区长评中的具体论据。它反映的是本期综合表现，属于参考工具而非绝对结论。个人偏好差异很大，建议把评分当作筛选的起点，最终仍以自己的试读体验为准。</p>
+        </details>
+        <details>
+          <summary>纸质版和电子版到底该怎么选？</summary>
+          <p>看重收藏、跨页表现与彩页还原度时选纸质版，尤其是完全版或爱藏版；看重便携、检索与空间占用时选电子版。需要注意的是，条漫类作品在电子端通常体验更完整，而依赖跨页构图的页漫更适合纸质阅读。</p>
+        </details>
+        <details>
+          <summary>如何判断一部作品是否会长期停更？</summary>
+          <p>可以从三个信号判断：一是近半年更新间隔是否逐步拉长；二是作者是否在卷末或社交平台提及身体状况、取材周期；三是出版社是否已公布明确的后续卷数计划。三个信号同时出现异常时，建议暂缓追更或等完结后再补。</p>
+        </details>
+        <details>
+          <summary>作品标注"完全版"就一定更好吗？</summary>
+          <p>不一定。完全版的主要优势是彩页重制、装帧升级与附加资料，但部分完全版会重新调整开本，导致原有构图比例变化。购买前建议查看实拍图，重点关注跨页是否完整、彩页色彩是否偏色，再决定是否值得溢价。</p>
+        </details>
+        <details>
+          <summary>同时追多部作品会不会影响阅读体验？</summary>
+          <p>关键在于区分作品的信息密度。日常治愈与四格类作品适合并行追更，因为单话信息量小、独立性高；而悬疑推理与青年向群像作品涉及大量线索与人物关系，同时追三部以上容易造成记忆混淆，建议一次只追一到两部。</p>
+        </details>
+        <details>
+          <summary>社区评价中哪些信息最有参考价值？</summary>
+          <p>优先看带具体页码、话数或情节依据的长评，这类评价通常经得起验证。纯粹的短评情绪表达参考价值有限。另外可关注评价中反复出现的具体缺点描述，例如"后期节奏拖沓""配角线未收束"，这类共性反馈往往比优点更能预测你的实际阅读体验。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="#top">
+          <span class="logo-mark">91</span>
+          <span>91漫画<small>日韩佳作 · 每日上新</small></span>
+        </a>
+        <p>
+          面向中文读者的日韩漫画推荐与行业观察平台。以编辑初审、社区众评、专家复核三层机制，
+          提供可验证的推荐依据、版本判断方法与分镜阅读知识。
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#categories">分类矩阵</a></li>
+          <li><a href="#ranking">精选佳作榜单</a></li>
+          <li><a href="#insight">行业解析</a></li>
+          <li><a href="#buying">购买指南</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>阅读专题</h4>
+        <ul>
+          <li><a href="#culture">漫画文化解读</a></li>
+          <li><a href="#reviews">社区评价</a></li>
+          <li><a href="#reviews">专家推荐</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于本站</h4>
+        <ul>
+          <li><a href="#top">平台介绍</a></li>
+          <li><a href="#insight">评价机制说明</a></li>
+          <li><a href="#buying">正版渠道提示</a></li>
+          <li><a href="#faq">读者帮助</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>本站内容为漫画推荐与行业资讯整理，评分与榜单为编辑部基于公开信息与社区反馈形成的参考意见，不构成购买承诺。</span>
+      <span>请支持正版授权渠道，尊重创作者与译者劳动成果。</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
